@@ -45,6 +45,13 @@ public class CollegeSelectorTest {
 		cs.createNewRealLifeInfo(id3, 2, 7, 9, 0, 8, 7, 10, 9, 7, 6, 7, 3, 4, 2, 3, 8, 9, 7, 9, 5, 6, 7, 10);
 		cs.createNewFinancial(id3, 10000, 5000, 8189, 10789, 17890, 16678, 11086, 3380);
 		
+		cs.createNewInfo(4, "Hong Kong University", "reach", "high", false);
+		cs.createNewAcademic(4, 8, 7, 9, 5, 7, 6, 4, 3, 8, 9, 10, 8, 9, 7, 6, 8, 1, 9);
+		cs.createNewRealLifeInfo(4, 8, 6, 8, 5, 6, 4, 2, 3, 5, 8, 6, 9, 10, 7, 9, 3, 5, 4, 2, 1, 5, 7, 4);
+		cs.createNewFinancial(4, 100000, 879, 2497, 4389, 3950, 5812, 78950, 21079);
+		
+		cs.printInformation(4);
+		
 		for(int f=0; f<cs.getNumberOfItems(); f++){
 			System.out.println(cs.CalcTotalSum(f));
 		}
