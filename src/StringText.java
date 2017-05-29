@@ -5,8 +5,8 @@ public class StringText {
 		
 		String c = "";
 		
-		ArrayList<Integer> nums = new ArrayList<Integer>();
-		nums.add(-1);
+		ArrayList<Integer> nums = new ArrayList<Integer>(){{add(-1);}};
+		
 		
 		
 		for(int i=0; i<a.length(); i++){			
